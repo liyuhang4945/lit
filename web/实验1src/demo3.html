@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人主页</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      header {
+        background-color: #575656;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      nav {
+        background-color: #444;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style: none;
+        text-align: center;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        padding: 20px 0;
+      }
+
+      .content article {
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>个人主页</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="content">
+        <article>
+          <h2>座右铭</h2>
+          <p>纵使困顿难行，亦当砥砺向前</p>
+          <div>
+            <img src="./image/R-C.jpg" width="500px height=500px" />
+          </div>
+        </article>
+        <article>
+          <h2>项目</h2>
+          <div class="portfolio-item">
+            <h3>旅游网站</h3>
+            <p>
+              本旅游网站的运行网站系统设计是基于HTML语言、CSS叠层样式表、
+              Javascript脚本、JSP、struts+hibernate框架以及Oracle数据库等技术实现在Internet上的动态页面网络服务。
+            </p>
+          </div>
+        </article>
+      </section>
+      <footer>
+        <p>&copy; 2024 lit</p>
+      </footer>
+    </div>
+  </body>
+</html>

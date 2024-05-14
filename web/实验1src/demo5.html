@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用javascript进行前端验证</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #registerForm {
+            position: absolute;
+            top: 30%;
+            left: 38%;
+            transform: translate(-50%、 -50%);
+        }
+
+        .btn {
+            margin: auto;
+            width: 80%;
+            padding: 5px;
+            position: relative;
+            left: 10%;
+            font-size: large;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload=function(){
+            var btn = document.getElementById("btn1");
+                
+            function check(){
+                password = document.getElementById("Password");
+               password2 =  document.getElementById("Password2");
+                if(password.value !=password2.value ){
+                    alert("俩次输入的密码不一样请重新输入！")
+                }
+            }
+            btn.onclick = check;
+
+           
+        }
+        
+    </script>
+    
+</head>
+
+<body>
+    <div id="registerForm">
+        <form action="#" name="myForm">
+            <table border="1px">
+                <div class="form-group">
+                    <tr>
+                        <td><label for="User">用户名</label></td>
+                        <td><input type="text" class="form-control" id="User"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Password">请输入密码：</label></td>
+                        <td><input type="password" class="form-control" id="Password"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><label for="Password">请再次输入密码：</label></td>
+                        <td><input type="password" class="form-control" id="Password2"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit" id="btn1" class="btn btn-primary">提交</button></td>
+                    </tr>
+                </div>
+
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

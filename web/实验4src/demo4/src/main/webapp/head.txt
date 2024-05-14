@@ -1,0 +1,8 @@
+
+<table cellspacing="1" cellpadding="1" width="60%" align="center" border="0">
+    <tr valign="bottom">
+        <td> <a href="4_5one.jsp"> one jsp</a></td>
+        <td> <a href="4_5two.jsp"> 4_5two jsp</a></td>
+        <td> <a href="4_5three.jsp"> 4_5three jsp</a></td>
+    </tr>
+</table>
